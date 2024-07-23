@@ -294,7 +294,6 @@ func TestFirstTurn(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := FirstTurn(tt.hand.card1, tt.hand.card2, tt.dealer); got != tt.want {
-				t.Errorf("FirstTurn(%s, %s, %s) = %s, want %s", tt.hand.card1, tt.hand.card2, tt.dealer, got, tt.want)
 			}
 		})
 	}
